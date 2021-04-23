@@ -1,6 +1,15 @@
+/*
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+et reset pour ::before ::after ?
+est-ce une bonne pratique ?*/
 
 body {
-	font-family: "Raleway", Arial, sans-serif;
+	font-family: "Raleway", Arial, Helvetica, sans-serif;
 	color: #000000;
 }
 
@@ -19,9 +28,11 @@ h2{
 }
 
 #main_wrapper {
-	width: 1000px; /* A voir si on garde ou pas une fois que la mise en page sera terminée*/
+	width: 2000px; /* A voir si on garde ou pas une fois que la mise en page sera terminée*/
+	/* récupérer les bonnes dimensions avec Figma !!!*/
 	margin: auto;
 }
+
 
 /* Header */
 
@@ -46,10 +57,25 @@ aside {
 	background: #f2f2f2;
 }
 
+#section_housing{
+	/* récupérer les bonnes dimensions avec Figma !!!*/
+	width: 80%;
+	height: auto;
+	margin: 20px auto;
+	padding: 20px 20px 20px 20px;
+	border: 1px solid red;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 300px);
+	justify-content: center;
+	grid-gap: 10 px;
+}
+/*a retravailler avec les colonnes et les titres */
+
 #anchor_housing {
 	display: flex;
 	flex-direction: row;
 	align-content: space-between ;
+	justify-content: space-between;
 	align-items: flex-start;
 }
 /*a retravailler parceque ça marche pas du tout !!!!!!*/
@@ -61,9 +87,31 @@ article {
 	box-shadow: 3px 4px 11px 5px rgba(0,0,0,0.10);
 }
 
+.card_housing{
+	width: 300px;
+	height: 250px;
+	/* récupérer les bonnes dimensions avec Figma !!!*/
+}
+
+.card_popular{
+	width: 400px;
+	height: 170px;
+}
+
 .card_housing, .card_popular {
 	padding: 8px;
 }
+
+.img_housing img, .img_popular img, .img_activity img{
+	width: 100%;
+	display:block;
+}
+/* demander à maxime de m'expliquer pourquoi je dois renseigner img */
+
+.img_housing, .img_popular, .img_activity {
+	overflow: hidden;
+}
+/* demander à maxime à quoi ça sert et si c'est utile*/
 
 .card_housing{
 	display: flex;
