@@ -39,6 +39,7 @@ h2 {
 header {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 nav ul {
@@ -49,6 +50,16 @@ nav ul {
 nav li {
 	margin-right: 15px;
 }
+
+/* Search */
+
+.fas.fa-map-marker-alt {
+	color: #000000;
+}
+
+/* Filtre */
+
+
 
 /*  Main  */
 
