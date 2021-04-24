@@ -179,8 +179,13 @@ footer {
 	padding: 20px 30px 20px 30px; /* A déterminer */
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 }
 
 footer ul {
 	list-style-type: none;
+}
+
+footer li {
+	margin: 10px;
 }
