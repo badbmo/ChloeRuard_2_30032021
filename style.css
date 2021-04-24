@@ -15,24 +15,24 @@ body {
 
 a {
 	text-decoration: none;
-	color: #000000
+	color: #000000;
 }
 
 i {
-	color:#0065FC
+	color: #0065fc;
 }
 
-h2{
+h2 {
 	font-size: 1em;
 	font-weight: bold;
 }
 
 #main_wrapper {
-	width: 2000px; /* A voir si on garde ou pas une fois que la mise en page sera terminée*/
+	width: auto; /* A voir si on garde ou pas une fois que la mise en page sera terminée*/
 	/* récupérer les bonnes dimensions avec Figma !!!*/
 	margin: auto;
+	max-width: 2000px; /* pour les super grands écran ? Trouver les bonnes dimensions*/
 }
-
 
 /* Header */
 
@@ -57,7 +57,7 @@ aside {
 	background: #f2f2f2;
 }
 
-#section_housing{
+#section_housing {
 	/* récupérer les bonnes dimensions avec Figma !!!*/
 	width: 80%;
 	height: auto;
@@ -74,64 +74,109 @@ aside {
 #anchor_housing {
 	display: flex;
 	flex-direction: row;
-	align-content: space-between ;
+	align-content: space-between;
 	justify-content: space-between;
 	align-items: flex-start;
 }
 /*a retravailler parceque ça marche pas du tout !!!!!!*/
 
 article {
-	background-color: #ffff; 
+	background-color: #ffff;
 	border: 0px solid transparent;
 	border-radius: 30px 30px 30px 30px;
-	box-shadow: 3px 4px 11px 5px rgba(0,0,0,0.10);
+	box-shadow: 3px 4px 11px 5px rgba(0, 0, 0, 0.1);
 }
 
-.card_housing{
+.card_housing {
 	width: 300px;
 	height: 250px;
 	/* récupérer les bonnes dimensions avec Figma !!!*/
 }
 
-.card_popular{
+.card_popular {
 	width: 400px;
 	height: 170px;
 }
 
-.card_housing, .card_popular {
+.card_housing,
+.card_popular {
 	padding: 8px;
 }
 
-.img_housing img, .img_popular img, .img_activity img{
+.img_housing img,
+.img_popular img,
+.img_activity img {
 	width: 100%;
-	display:block;
+	display: block;
 }
 /* demander à maxime de m'expliquer pourquoi je dois renseigner img */
 
-.img_housing, .img_popular, .img_activity {
+.img_housing,
+.img_popular,
+.img_activity {
 	overflow: hidden;
 }
 /* demander à maxime à quoi ça sert et si c'est utile*/
 
-.card_housing{
+.card_housing {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.card_popular{
+.card_popular {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
 
+.fas.fa-chart-line {
+	color: #000000;
+}
+
+/* Activity */
+
+#anchor_activity {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 20px;
+	grid-template-rows: 50px 14em 4em 4em 4em 4em 14em;
+}
+
+#activity_main_title {
+	grid-area: 1 / 1 / 1 / 1;
+}
+
+#card_activity_port {
+	grid-area: 2 / 1 / 7 / 2;
+}
+
+#card_activity_fort {
+	grid-area: 2/2/5/3;
+}
+
+#card_activity_frioul {
+	grid-area: 6/2/7/3;
+}
+
+#card_activity_parc_c {
+	grid-area: 2/3/7/4;
+}
+
+#card_activity_garde {
+	grid-area: 2/4/3/5;
+}
+
+#card_activity_parc_l {
+	grid-area: 4/4/7/5;
+}
 
 /*  Footer  */
 
 footer {
 	background: #f2f2f2;
 	color: #000000;
-	padding-top: 5px; /* A déterminer */
+	padding: 20px 30px 20px 30px; /* A déterminer */
 	display: flex;
 	justify-content: space-between;
 }
