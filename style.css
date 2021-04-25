@@ -1,11 +1,10 @@
-/*
-*{
+* {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
 
-et reset pour ::before ::after ?
+/*et reset pour ::before ::after ?
 est-ce une bonne pratique ?*/
 
 body {
@@ -59,8 +58,6 @@ nav li {
 
 /* Filtre */
 
-
-
 /*  Main  */
 
 article {
@@ -70,16 +67,31 @@ article {
 	box-shadow: 3px 4px 11px 5px rgba(0, 0, 0, 0.1);
 }
 
-#section_housing,
+#section_housing {
+	background: #f2f2f2;
+	padding: 50px;
+}
+
+.img_housing {
+	border-radius: 30px 30px 0px 0px;
+}
+
 aside {
 	background: #f2f2f2;
 }
 
-#section_housing {
+#template_card_housing {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 50px 14em 14em 50px; /* retravailler les dimensions */ 
 	gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+	#template_card_housing {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
 }
 
 #housing_main_title {
@@ -117,7 +129,8 @@ aside {
 .img_popular img,
 .img_activity img {
 	width: 100%;
-	display: block;
+	height: 150px;
+	object-fit: cover;
 }
 /* demander à maxime de m'expliquer pourquoi je dois renseigner img */
 
@@ -125,6 +138,8 @@ aside {
 .img_popular,
 .img_activity {
 	overflow: hidden;
+	width: 100%;
+	height: 150px;
 }
 /* demander à maxime à quoi ça sert et si c'est utile*/
 
@@ -144,8 +159,7 @@ aside {
 	color: #000000;
 }
 
-
-		/* Activity */
+/* Activity */
 
 #anchor_activity {
 	display: grid;
@@ -200,3 +214,5 @@ footer ul {
 footer li {
 	margin: 10px;
 }
+
+
