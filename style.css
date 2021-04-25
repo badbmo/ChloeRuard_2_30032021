@@ -63,34 +63,6 @@ nav li {
 
 /*  Main  */
 
-#section_housing,
-aside {
-	background: #f2f2f2;
-}
-
-#section_housing {
-	/* récupérer les bonnes dimensions avec Figma !!!*/
-	width: 80%;
-	height: auto;
-	margin: 20px auto;
-	padding: 20px 20px 20px 20px;
-	border: 1px solid red;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, 300px);
-	justify-content: center;
-	grid-gap: 10 px;
-}
-/*a retravailler avec les colonnes et les titres */
-
-#anchor_housing {
-	display: flex;
-	flex-direction: row;
-	align-content: space-between;
-	justify-content: space-between;
-	align-items: flex-start;
-}
-/*a retravailler parceque ça marche pas du tout !!!!!!*/
-
 article {
 	background-color: #ffff;
 	border: 0px solid transparent;
@@ -98,20 +70,47 @@ article {
 	box-shadow: 3px 4px 11px 5px rgba(0, 0, 0, 0.1);
 }
 
+#section_housing,
+aside {
+	background: #f2f2f2;
+}
+
+#section_housing {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 50px 14em 14em 50px; /* retravailler les dimensions */ 
+	gap: 20px;
+}
+
+#housing_main_title {
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+#housing_title_more {
+	grid-area: 4 / 1 / 5 /2;
+}
+
+/*a retravailler avec les colonnes et les titres */
+
+#anchor_housing {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
 .card_housing {
 	width: 300px;
 	height: 250px;
+	padding: 8px;
 	/* récupérer les bonnes dimensions avec Figma !!!*/
 }
 
 .card_popular {
 	width: 400px;
 	height: 170px;
-}
-
-.card_housing,
-.card_popular {
 	padding: 8px;
+	/* récupérer les bonnes dimensions avec Figma !!!*/
 }
 
 .img_housing img,
@@ -132,26 +131,27 @@ article {
 .card_housing {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: flex-start;
 }
 
 .card_popular {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: center; /* ça va pas... à retravailler */
 }
 
 .fas.fa-chart-line {
 	color: #000000;
 }
 
-/* Activity */
+
+		/* Activity */
 
 #anchor_activity {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	column-gap: 20px;
-	grid-template-rows: 50px 14em 4em 4em 4em 4em 14em;
+	grid-template-rows: 50px 14em 4em 4em 4em 4em 14em; /*trouver les bonnes dimensions*/
 }
 
 #activity_main_title {
