@@ -27,7 +27,7 @@ h2 {
 }
 
 #main_wrapper {
-	width: auto; /* A voir si on garde ou pas une fois que la mise en page sera terminée*/
+	width:auto; /* A voir si on garde ou pas une fois que la mise en page sera terminée*/
 	/* récupérer les bonnes dimensions avec Figma !!!*/
 	margin: auto;
 	max-width: 1800px; /* pour les super grands écran ? Trouver les bonnes dimensions*/
@@ -114,29 +114,19 @@ aside {
 	align-items: flex-start;
 }
 
-.card_housing {
-	padding: 5px;
-}
-
-.card_popular {
-	padding: 5px;
-}
-
 .img_housing img,
-.img_popular img,
-.img_activity img {
+.img_popular img {
 	width: 100%;
-	height: 150px;
+	height: 115px;
 	object-fit: cover;
 }
 /* demander à maxime de m'expliquer pourquoi je dois renseigner img */
 
 .img_housing,
-.img_popular,
-.img_activity {
+.img_popular {
 	overflow: hidden;
 	width: 100%;
-	height: 150px;
+	height: 115px;
 }
 /* demander à maxime à quoi ça sert et si c'est utile*/
 
@@ -144,12 +134,14 @@ aside {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	padding: 5px;
 }
 
 .card_popular {
 	display: flex;
 	flex-direction: row;
 	justify-content: center; /* ça va pas... à retravailler */
+	padding: 5px;
 }
 
 .fas.fa-chart-line {
@@ -158,11 +150,27 @@ aside {
 
 /* Activity */
 
+.img_activity img {
+	width: 100%;
+	height: 90%;
+	object-fit: cover;
+}
+
+.img_activity {
+	overflow: hidden;
+	width: 100%;
+	height: 90%;
+}
+
+.title_activity{
+	height: 55px;
+}
+
 #anchor_activity {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	column-gap: 20px;
-	grid-template-rows: 50px 14em 4em 4em 4em 4em 14em; /*trouver les bonnes dimensions*/
+	column-gap: 40px;
+	grid-template-rows: 50px 190px 45px 45px 160px; /*trouver les bonnes dimensions*/
 }
 
 #activity_main_title {
@@ -170,19 +178,19 @@ aside {
 }
 
 #card_activity_port {
-	grid-area: 2 / 1 / 7 / 2;
+	grid-area: 2 / 1 / 6 / 2;
 }
 
 #card_activity_fort {
-	grid-area: 2/2/5/3;
+	grid-area: 2/2/4/3;
 }
 
 #card_activity_frioul {
-	grid-area: 6/2/7/3;
+	grid-area: 5/2/6/3;
 }
 
 #card_activity_parc_c {
-	grid-area: 2/3/7/4;
+	grid-area: 2/3/6/4;
 }
 
 #card_activity_garde {
@@ -190,7 +198,7 @@ aside {
 }
 
 #card_activity_parc_l {
-	grid-area: 4/4/7/5;
+	grid-area: 4/4/6/5;
 }
 
 /*  Footer  */
