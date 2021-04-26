@@ -10,6 +10,9 @@ est-ce une bonne pratique ?*/
 body {
 	font-family: "Raleway", Arial, Helvetica, sans-serif;
 	color: #000000;
+	width:auto; 
+	margin: auto;
+	max-width: 1800px; /* pour les super grands écran ? Trouver les bonnes dimensions*/
 }
 
 a {
@@ -24,13 +27,6 @@ i {
 h2 {
 	font-size: 1em;
 	font-weight: bold;
-}
-
-#main_wrapper {
-	width:auto; /* A voir si on garde ou pas une fois que la mise en page sera terminée*/
-	/* récupérer les bonnes dimensions avec Figma !!!*/
-	margin: auto;
-	max-width: 1800px; /* pour les super grands écran ? Trouver les bonnes dimensions*/
 }
 
 /* Header */
@@ -170,7 +166,7 @@ aside {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	column-gap: 40px;
-	grid-template-rows: 50px 190px 45px 45px 160px; /*trouver les bonnes dimensions*/
+	grid-template-rows: 50px 190px 45px 45px 160px;
 }
 
 #activity_main_title {
