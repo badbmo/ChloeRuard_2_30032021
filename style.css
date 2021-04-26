@@ -42,13 +42,30 @@ header {
 	padding: 40px 50px 40px 50px;
 }
 
+#links{
+	display: flex;
+}
+
 nav ul {
 	list-style-type: none;
 	display: flex;
 }
 
 nav li {
-	margin-right: 15px;
+	width: 160px;
+	text-align: center;
+}
+
+nav li :hover {
+	border-top: 2px solid #0065fc;
+	color:#0065fc;
+}
+
+/*Travailler sur la bordure */
+
+#subscription{
+	color:#0065fc;
+	font-weight: bold;
 }
 
 /* Search */
@@ -102,7 +119,7 @@ aside {
 	#template_card_housing {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: 20px;
+		gap: 30px;
 	}
 }
 
