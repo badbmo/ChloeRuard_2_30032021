@@ -71,7 +71,7 @@ nav li :hover {
 
 /* ------------------------- Search -------------------- */
 
-#section_filter_search h1,
+#section_filter_search h1, #section_filter_search
 p {
 	margin: 10px 0px 10px 0px;
 }
@@ -227,7 +227,7 @@ article:hover {
 #section_housing {
 	background: #f2f2f2;
 	padding: 40px;
-	border-radius: 25px 25px 25px 25px;
+	border-radius: 25px;
 }
 
 #template_card_housing {
@@ -265,12 +265,32 @@ article:hover {
 	padding: 5px;
 }
 
+#housing_main_title{
+	padding-bottom: 25px;
+}
+
+#housing_title_more{
+	padding-top: 40px;
+}
+
+.title_housing{
+	padding: 10px 0px 0px 14px;
+}
+
+.price_housing{
+	padding: 8px 0px 0px 14px;
+}
+
+.rating_housing{
+	padding: 8px 0px 6px 14px;
+}
+
 /* ------------------------- */
 
 aside {
 	background: #f2f2f2;
 	padding: 40px;
-	border-radius: 25px 25px 25px 25px;
+	border-radius: 25px;
 }
 
 #template_card_popular {
