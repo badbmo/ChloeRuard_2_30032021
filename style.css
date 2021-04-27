@@ -209,7 +209,7 @@ input:focus{
 article {
 	background-color: #ffff;
 	border: 0px solid transparent;
-	border-radius: 30px ;
+	border-radius: 25px ;
 	box-shadow: 3px 4px 11px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -250,7 +250,7 @@ article:hover {
 }
 
 .img_housing {
-	border-radius: 25px 25px 0px 0px;
+	border-radius: 20px 20px 0px 0px;
 	overflow: hidden;
 	width: 100%;
 	height: 115px;
@@ -305,7 +305,7 @@ aside {
 }
 
 .img_popular {
-	border-radius: 25px 0px 0px 25px;
+	border-radius: 20px 0px 0px 20px;
 	overflow: hidden;
 	width: 100%;
 	height: 135px;
@@ -337,17 +337,14 @@ images pas centrées comme dans maquette */
 
 .img_activity {
 	border-radius: 25px 25px 0px 0px;
+	overflow: hidden;
+	flex-basis: 90%;
 }
 
 .img_activity img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-}
-
-.img_activity {
-	overflow: hidden;
-	flex-basis: 90%;
 }
 
 .title_activity {
