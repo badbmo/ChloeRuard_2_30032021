@@ -122,6 +122,19 @@ p {
 	background-color: #0065fc;
 }
 
+#info_filter {
+	display: flex;
+	align-items: center;
+	margin: 0 0 20px 0;
+}
+
+#info_filter i {
+	border: 1px solid #f2f2f2;
+	padding: 5px 10px 5px 10px;
+	border-radius: 100%;
+	margin: 0 15px 0 0;
+}
+
 /*  Main  */
 
 article {
@@ -131,7 +144,7 @@ article {
 	box-shadow: 3px 4px 11px 5px rgba(0, 0, 0, 0.1);
 }
 
-article:hover{
+article:hover {
 	cursor: pointer;
 	transform: scale(1.05);
 	transition: ease 0.1s;
