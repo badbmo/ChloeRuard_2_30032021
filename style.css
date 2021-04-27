@@ -174,10 +174,12 @@ input:focus{
 
 .button:hover {
 	background-color: #deebff;
+	transition-duration: 0.20s;
 }
 
 .button:hover i {
 	background-color: #ffff;
+	transition-duration: 0.20s;
 }
 
 /*PB: mini marge autour icone ...*/
@@ -211,7 +213,7 @@ article {
 article:hover {
 	cursor: pointer;
 	transform: scale(1.05);
-	transition: ease 0.1s;
+	transition-duration: 0.1s;
 }
 
 #section_housing {
