@@ -330,6 +330,17 @@ aside {
 	color: #000000;
 }
 
+#popular_main_title{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 25px;
+}
+
+.fas.fa-chart-line{
+	font-size: 1.5em;
+}
+
 /* --------------------------- Activity -------------------------- */
 
 /* pb à résoudre: 
