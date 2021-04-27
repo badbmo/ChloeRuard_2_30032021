@@ -131,6 +131,12 @@ article {
 	box-shadow: 3px 4px 11px 5px rgba(0, 0, 0, 0.1);
 }
 
+article:hover{
+	cursor: pointer;
+	transform: scale(1.05);
+	transition: ease 0.1s;
+}
+
 #section_housing {
 	background: #f2f2f2;
 	padding: 50px;
