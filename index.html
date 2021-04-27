@@ -30,15 +30,17 @@
 <!-- MAIN -->
        <main>
 <!-- RECHERCHE -->
-            <section id="section_filter">
+            <section id="section_filter_search">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
-                <i class="fas fa-map-marker-alt"></i>
-                <form method="post" action="#">
-                        <input type="search" name="ville" id="ville" placeholder="Marseille, France" size="30" />
-                        <input type="submit" value="Rechercher" />
-                </form>
-                <i class="fas fa-search"></i>
+                <div id="search">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <form method="post" action="#">
+                            <input type="search" name="ville" id="ville" placeholder="Marseille, France" />
+                            <button class="button_search"> Rechercher</button>
+                            <button class="button_search"> <i class="fas fa-search"></i></button>
+                    </form>
+                </div>
 
 <!-- FILTRE -->
                 <div id="filter">
