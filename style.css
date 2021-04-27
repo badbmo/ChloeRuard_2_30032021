@@ -34,7 +34,7 @@ main {
 	padding: 0px 50px 50px 50px;
 }
 
-/* Header */
+/* --------------------- Header --------------------- */
 
 header {
 	display: flex;
@@ -69,7 +69,7 @@ nav li :hover {
 	font-weight: bold;
 }
 
-/* Search */
+/* ------------------------- Search -------------------- */
 
 #section_filter_search h1,
 p {
@@ -143,7 +143,7 @@ input:focus{
 	display:none;
 }
 
-/* Filtre */
+/* ----------------- Filtre --------------------- */
 
 #filter {
 	display: flex;
@@ -201,7 +201,7 @@ input:focus{
 	margin: 0 15px 0 0;
 }
 
-/*  Main  */
+/* ---------------- Main ---------------------- */
 
 article {
 	background-color: #ffff;
@@ -216,28 +216,18 @@ article:hover {
 	transition-duration: 0.1s;
 }
 
+#anchor_housing {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/* -------------------------*/
+
 #section_housing {
 	background: #f2f2f2;
 	padding: 50px;
 	border-radius: 25px 25px 25px 25px;
-}
-
-.img_housing {
-	border-radius: 25px 25px 0px 0px;
-}
-
-aside {
-	background: #f2f2f2;
-	padding: 50px;
-	border-radius: 25px 25px 25px 25px;
-}
-
-.img_popular {
-	border-radius: 25px 0px 0px 25px;
-}
-
-.img_activity {
-	border-radius: 25px 25px 0px 0px;
 }
 
 #template_card_housing {
@@ -254,36 +244,49 @@ aside {
 	}
 }
 
-/*a retravailler avec les colonnes et les titres */
-
-#anchor_housing {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: flex-start;
-}
-
-.img_housing img,
-.img_popular img {
-	width: 100%;
-	height: 115px;
-	object-fit: cover;
-}
-/* demander à maxime de m'expliquer pourquoi je dois renseigner img */
-
-.img_housing,
-.img_popular {
+.img_housing {
+	border-radius: 25px 25px 0px 0px;
 	overflow: hidden;
 	width: 100%;
 	height: 115px;
 }
-/* demander à maxime à quoi ça sert et si c'est utile*/
+
+.img_housing img {
+	width: 100%;
+	height: 115px;
+	object-fit: cover;
+}
+
+
 
 .card_housing {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 5px;
+}
+
+/* ------------------------- */
+
+aside {
+	background: #f2f2f2;
+	padding: 50px;
+	border-radius: 25px 25px 25px 25px;
+}
+
+
+
+.img_popular {
+	border-radius: 25px 0px 0px 25px;
+	overflow: hidden;
+	width: 100%;
+	height: 115px;
+}
+
+.img_popular img {
+	width: 100%;
+	height: 115px;
+	object-fit: cover;
 }
 
 .card_popular {
@@ -297,10 +300,14 @@ aside {
 	color: #000000;
 }
 
-/* Activity */
+/* --------------------------- Activity -------------------------- */
 
 /* pb à résoudre: 
 images pas centrées comme dans maquette */
+
+.img_activity {
+	border-radius: 25px 25px 0px 0px;
+}
 
 .img_activity img {
 	width: 100%;
@@ -318,6 +325,8 @@ images pas centrées comme dans maquette */
 	padding: 20px;
 }
 
+/*PB:flex basis pas sur que ça serve vraiment */
+
 #anchor_activity article {
 	display: flex;
 	flex-direction: column;
@@ -331,6 +340,7 @@ images pas centrées comme dans maquette */
 	padding: 40px 0px 0px 0px;
 }
 
+/*PB: sortir le titre de la grid */
 #activity_main_title {
 	grid-area: 1 / 1 / 1 / 1;
 }
@@ -359,7 +369,7 @@ images pas centrées comme dans maquette */
 	grid-area: 4/4/6/5;
 }
 
-/*  Footer  */
+/* -------------------------- Footer ------------------------------ */
 
 footer {
 	background: #f2f2f2;
