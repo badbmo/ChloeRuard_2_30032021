@@ -83,6 +83,7 @@ p {
 #search{
 	display: inline-flex;
 	align-items: center;
+	margin: 10px 0px 10px 0px;
 }
 
 .fas.fa-map-marker-alt{
@@ -144,14 +145,11 @@ input:focus{
 
 /* Filtre */
 
-#filter button {
-	display: inline-flex;
+#filter {
+	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-}
-
-#filter h2 {
-	display: inline;
+	margin: 10px 0px 10px 0px;
 }
 
 /*PB: reprendre les boutons car les ronds ne sont pas ronds (surtout familial)*/
