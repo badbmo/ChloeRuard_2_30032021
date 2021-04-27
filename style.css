@@ -71,13 +71,75 @@ nav li :hover {
 
 /* Search */
 
-#section_filter h1,
+#section_filter_search h1,
 p {
 	margin: 10px 0px 10px 0px;
 }
 
 .fas.fa-map-marker-alt {
 	color: #000000;
+}
+
+#search{
+	display: inline-flex;
+	align-items: center;
+}
+
+.fas.fa-map-marker-alt{
+	background-color: #f2f2f2;
+	border: #deebff;
+	padding: 15px;
+	border-radius: 15px 0px 0px 15px;
+}
+
+/*PB: travailler font bouton et padding*/
+input{
+	border: 2px solid #f2f2f2;
+	border-right: none;
+	border-left: none;
+	padding:13px;
+}
+
+input:focus{
+	border: 2px solid #0065fc;
+	outline:none;
+}
+
+.button_search, .button_search_icon{
+	background-color: #0065fc;
+	color:#ffff;
+	border: #deebff;
+	padding: 15px;
+	border-radius: 0px 15px 15px 0px;
+	cursor: pointer;
+}
+
+.fas.fa-search{
+	color:#ffff;
+}
+
+.button_search:hover {
+	background-color: #0447ac;
+	transition-duration: 0.20s;
+}
+
+.button_search:active {
+	background-color:#deebff ;
+}
+
+/*PB:est-ce vraiment utile car sur mobile ?*/
+.button_search_icon:hover {
+	background-color: #0447ac;
+	transition-duration: 0.20s;
+}
+
+/*PB:est-ce vraiment utile car sur mobile ?*/
+.button_search_icon:active {
+	background-color:#deebff ;
+}
+
+.button_search_icon{
+	display:none;
 }
 
 /* Filtre */
@@ -92,6 +154,8 @@ p {
 	display: inline;
 }
 
+/*PB: reprendre les boutons car les ronds ne sont pas ronds (surtout familial)*/
+/*PB: reprendre la partie font sur les boutons*/
 .button {
 	border: 2px solid #f2f2f2;
 	background-color: transparent;
@@ -99,6 +163,7 @@ p {
 	margin: 10px;
 	border-radius: 40px 40px 40px 40px;
 	cursor: pointer;
+	font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
 
 .button i {
@@ -106,12 +171,13 @@ p {
 	border: #deebff;
 	padding: 18px;
 	margin: 0 10px 0 0;
-	border-radius: 40px 40px 40px 40px;
+	border-radius: 40px;
 }
 
 .button:hover {
 	background-color: #deebff;
 }
+
 .button:hover i {
 	background-color: #ffff;
 }
