@@ -226,6 +226,7 @@ article:hover {
 	grid-template-columns: 6fr 3fr;
 }
 
+
 /*PB: c'est toujours pas la bonne taille de carte putain*/
 /*PB: essayer avec flex sur les section housing et aside (popular) pour aligner les éléments*/
 
@@ -377,11 +378,9 @@ aside {
 }
 
 .title_activity {
-	flex-basis: 55px;
 	padding: 20px;
 }
 
-/*PB:flex basis pas sur que ça serve vraiment */
 #anchor_activity {
 	padding-top: 50px;
 }
@@ -397,8 +396,6 @@ aside {
 	column-gap: 40px;
 	grid-template-rows: 190px 45px 45px 160px;
 }
-
-/*PB: sortir le titre de la grid */
 
 #activity_main_title {
 	padding-bottom: 25px;
@@ -428,6 +425,35 @@ aside {
 	grid-area: 3/4/5/5;
 }
 
+@media only screen and (max-width: 1440px) {
+	#template_card_activity {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-gap: 30px;
+	}
+
+	#anchor_activity article {
+		grid-area: auto;
+		max-height: 200px;
+	}
+}
+
+@media only screen and (max-width: 1074px) {
+	#template_card_activity {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	#anchor_activity article {
+		max-height: 170px;
+	}
+}
+
+@media only screen and (max-width: 740px) {
+	#template_card_activity {
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 20px;
+	}
+}
 
 /* -------------------------- Footer ------------------------------ */
 
