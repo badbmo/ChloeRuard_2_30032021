@@ -144,6 +144,15 @@ input:focus {
 	display: none;
 }
 
+@media only screen and (max-width: 768px) {
+	.button_search {
+		display: none;
+	}
+	.button_search_icon {
+		display: block;
+	}
+}
+
 /* ----------------- Filtre --------------------- */
 
 #filter {
@@ -399,7 +408,7 @@ aside {
 }
 
 #anchor_activity {
-	margin: 50px;
+	padding: 50px;
 }
 
 #anchor_activity article {
