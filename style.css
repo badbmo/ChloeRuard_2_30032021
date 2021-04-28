@@ -226,6 +226,7 @@ article:hover {
 }
 
 /*PB: c'est toujours pas la bonne taille de carte putain*/
+/*PB: essayer avec flex sur les section housing et popular pour aligner les éléments*/
 
 /* -------------------------*/
 
@@ -249,6 +250,13 @@ article:hover {
 	}
 }
 
+.card_housing {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	padding: 5px;
+}
+
 .img_housing {
 	border-radius: 20px 20px 0px 0px;
 	overflow: hidden;
@@ -261,13 +269,6 @@ article:hover {
 	height: 100%;
 	max-height: 100%;
 	object-fit: cover;
-}
-
-.card_housing {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding: 5px;
 }
 
 #housing_main_title{
@@ -304,26 +305,25 @@ aside {
 	gap: 30px;
 }
 
+.card_popular {
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+	padding: 5px;
+}
+
 .img_popular {
 	border-radius: 20px 0px 0px 20px;
 	overflow: hidden;
-	width: 100%;
+	width: 130px;
+	min-width: 130px;
 	height: 135px;
 }
 
 .img_popular img {
 	width: 100%;
-	height: 135px;
+	height: 100%;
 	object-fit: cover;
-}
-
-.card_popular {
-	display: flex;
-	flex-direction: row;
-	justify-content: center; /* ça va pas... à retravailler */
-	padding: 5px;
-	width: 345px;
-	height: 145px;
 }
 
 .fas.fa-chart-line {
@@ -339,6 +339,24 @@ aside {
 
 .fas.fa-chart-line{
 	font-size: 1.5em;
+}
+
+.info_popular{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.title_price_popular h1{
+	padding: 10px 0px 8px 14px;
+}
+
+.title_price_popular p{
+	padding: 0px 0px 8px 14px;
+}
+
+.rating_popular{
+	padding: 0px 0px 6px 14px;
 }
 
 /* --------------------------- Activity -------------------------- */
