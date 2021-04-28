@@ -12,7 +12,8 @@ body {
 	color: #000000;
 	width: auto;
 	margin: auto;
-	max-width: 1800px; /* pour les super grands écran ? Trouver les bonnes dimensions*/
+	max-width: 1920px; 
+	min-width: 320px; /*: voir si utile. Taille phone petit*/
 }
 
 a {
@@ -226,7 +227,7 @@ article:hover {
 }
 
 /*PB: c'est toujours pas la bonne taille de carte putain*/
-/*PB: essayer avec flex sur les section housing et popular pour aligner les éléments*/
+/*PB: essayer avec flex sur les section housing et aside (popular) pour aligner les éléments*/
 
 /* -------------------------*/
 
@@ -361,8 +362,7 @@ aside {
 
 /* --------------------------- Activity -------------------------- */
 
-/* pb à résoudre: 
-images pas centrées comme dans maquette */
+/* pb à résoudre: images pas centrées comme dans maquette */
 
 .img_activity {
 	border-radius: 25px 25px 0px 0px;
@@ -397,6 +397,7 @@ images pas centrées comme dans maquette */
 }
 
 /*PB: sortir le titre de la grid */
+
 #activity_main_title {
 	grid-area: 1 / 1 / 1 / 1;
 }
@@ -425,15 +426,16 @@ images pas centrées comme dans maquette */
 	grid-area: 4/4/6/5;
 }
 
+
 /* -------------------------- Footer ------------------------------ */
 
 footer {
 	background: #f2f2f2;
 	color: #000000;
-	padding: 0px 50px 40px 50px;
-	display: flex;
-	justify-content: flex-start;
-	flex-wrap: wrap;
+	padding: 40px 50px 0px 50px;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	min-width: max-content;
 }
 
 footer ul {
@@ -441,13 +443,20 @@ footer ul {
 }
 
 footer li {
-	margin: 10px 0px 0px 0px; /*ou padding ?*/
+	margin: 10px 0px 0px 0px;
 }
 
 footer h2 {
-	margin: 0px 0px 20px 0px; /*ou padding ?*/
+	margin: 0px 0px 20px 0px;
 }
 
 .footer_bloc {
-	margin: 50px 260px 0px 0px; /*ou padding ?*/
+	padding: 0px 40px 40px 0px;
+}
+
+@media only screen and (max-width: 768px){
+	footer {	
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3,1fr);
+	}
 }
