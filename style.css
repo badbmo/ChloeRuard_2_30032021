@@ -226,9 +226,18 @@ article:hover {
 	grid-template-columns: 6fr 3fr;
 }
 
+@media only screen and (max-width: 1440px){
+	#anchor_housing {
+		grid-template-columns: 1fr;
+		grid-gap: 40px;
+	}
+	aside{
+		grid-row: 1;
+	}
+}
 
 /*PB: c'est toujours pas la bonne taille de carte putain*/
-/*PB: essayer avec flex sur les section housing et aside (popular) pour aligner les éléments*/
+/*PB: essayer avec flex sur les section housing et aside (popular) pour aligner les éléments dans les container*/
 
 /* -------------------------*/
 
@@ -236,6 +245,14 @@ article:hover {
 	background: #f2f2f2;
 	padding: 40px;
 	border-radius: 25px;
+}
+
+@media only screen and (max-width: 1440px){
+	#section_housing {
+		background: none;
+		padding: 0px;
+		border-radius: 0px;
+	}
 }
 
 #template_card_housing {
