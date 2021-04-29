@@ -4,9 +4,6 @@
 	margin: 0;
 }
 
-/*et reset pour ::before ::after ?
-est-ce une bonne pratique ?*/
-
 body {
 	font-family: "Raleway", Arial, Helvetica, sans-serif;
 	color: #000000;
@@ -34,36 +31,33 @@ h2,
 /* --------------------- Header --------------------- */
 
 header {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
 	align-items: center;
-	padding: 40px 4% 30px 4%;
+	grid-template-columns: 1fr 5fr 2fr 1fr;
+	padding: 0px 4% 0px 4%;
+	text-align:center;
 }
 
-#links {
+nav {
 	display: flex;
+	align-items: center;
+	justify-content:space-around;
+	grid-area: 1/3;
 }
 
-nav ul {
-	list-style-type: none;
-	display: flex;
-}
-
-nav li {
-	width: 160px;
-	text-align: center;
-}
-
-nav li :hover {
-	border-top: 2px solid #0065fc;
+nav a:hover {
+	border-top: 3px solid #0065fc;
 	color: #0065fc;
 }
 
-/*PB: Travailler sur la bordure!! */
+header a{
+	padding: 3em 2em;
+}
 
 #subscription {
 	color: #0065fc;
 	font-weight: bold;
+	grid-area: 1/4;
 }
 
 /* ------------------------- Search -------------------- */
@@ -112,8 +106,15 @@ input:focus {
 	color: #ffff;
 	border: #deebff;
 	padding: 15px;
-	border-radius: 0px 15px 15px 0px;
 	cursor: pointer;
+}
+.button_search{
+	border-radius: 0px 15px 15px 0px;
+}
+
+.button_search_icon {
+	border-radius: 15px;
+	display: none;
 }
 
 .fas.fa-search {
@@ -129,19 +130,13 @@ input:focus {
 	background-color: #deebff;
 }
 
-/*PB:est-ce vraiment utile car sur mobile ?*/
 .button_search_icon:hover {
 	background-color: #0447ac;
 	transition-duration: 0.2s;
 }
 
-/*PB:est-ce vraiment utile car sur mobile ?*/
 .button_search_icon:active {
 	background-color: #deebff;
-}
-
-.button_search_icon {
-	display: none;
 }
 
 @media only screen and (max-width: 768px) {
