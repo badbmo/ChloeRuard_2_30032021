@@ -272,9 +272,14 @@ article:hover {
 
 @media only screen and (max-width: 768px) {
 	#template_card_housing {
-		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: 30px;
+		gap: 20px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	#template_card_housing {
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -327,10 +332,22 @@ aside {
 	border-radius: 25px;
 }
 
+@media only screen and (max-width: 1360px) {
+	aside {
+		padding: 4%;
+	}
+}
+
 #template_card_popular {
 	display: grid;
 	grid-template-rows: repeat(3, 1fr);
 	gap: 30px;
+}
+
+@media only screen and (max-width: 1360px) {
+	#template_card_popular {
+		gap: 20px;
+	}
 }
 
 .card_popular {
@@ -375,7 +392,7 @@ aside {
 	justify-content: space-between;
 }
 
-.title_price_popular h1 {
+.title_price_popular h3 {
 	padding: 10px 0px 8px 14px;
 }
 
@@ -464,7 +481,7 @@ aside {
 	}
 }
 
-@media only screen and (max-width: 1074px) {
+@media only screen and (max-width:1024px) {
 	#template_card_activity {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -474,7 +491,7 @@ aside {
 	}
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 768px) {
 	#template_card_activity {
 		grid-template-columns: repeat(1, 1fr);
 		grid-gap: 20px;
