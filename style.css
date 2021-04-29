@@ -60,6 +60,10 @@ header a{
 	grid-area: 1/4;
 }
 
+#subscription:hover {
+	color: #0447ac;
+}
+
 @media only screen and (max-width: 640px) {
 	header {
 	grid-template-columns: 1fr 5fr 1fr;
